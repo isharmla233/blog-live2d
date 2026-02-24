@@ -10,8 +10,31 @@
         {
           "key": "Access-Control-Allow-Methods",
           "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
         }
       ]
+    },
+    {
+      "source": "/**/*.moc3",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=15552000"
+        }
+      ]
+    }
+  ],
+  "caches": [
+    {
+      "source": "/**/*.moc3",
+      "cacheTtl": 31104000
+    },
+    {
+      "source": "/*",
+      "cacheTtl": 2592000
     }
   ]
 }
