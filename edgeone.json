@@ -33,12 +33,75 @@
           "value": "public, max-age=15552000"
         }
       ]
+    },
+    {
+      "source": "/*.json",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.baiyuyu.com"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=15552000"
+        }
+      ]
+    },
+    {
+      "source": "/*.webp",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.baiyuyu.com"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=15552000"
+        }
+      ]
+    },
+    {
+      "source": "/*.js",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.baiyuyu.com"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
     }
   ],
   "caches": [
     {
       "source": "/*.moc3",
       "cacheTtl": 31104000
+    },
+    {
+      "source": "/*.json",
+      "cacheTtl": 31104000
+    },
+    {
+      "source": "/*.webp",
+      "cacheTtl": 31104000
+    },
+    {
+      "source": "/*.js",
+      "cacheTtl": 2592000
     },
     {
       "source": "/*",
